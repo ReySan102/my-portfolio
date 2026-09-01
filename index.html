@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -697,6 +697,7 @@
           </div>
           <div class="project-links">
             <a href="https://github.com/fournierc2atwit/senior_project_2026_ACE.git" class="project-link" target="_blank" rel="noopener">→ GitHub</a>
+            <a href="https://senior-project-2026-ace.onrender.com" class="project-link" target="_blank" rel="noopener">→ Game</a>
           </div>
         </div>
       </div>
@@ -710,10 +711,11 @@
           <p class="project-kicker">Security</p>
           <h3 class="project-name">AI Malware Triage</h3>
           <p class="project-desc">
-            A five-stage pipeline that takes a suspicious binary and produces a ranked verdict instead of a
-            raw dump. It pulls static features out of the PE header, enriches them with VirusTotal reputation
-            data, and maps the observed behavior onto MITRE ATT&amp;CK techniques, so the output is something an
-            analyst can act on instead of a wall of raw indicators.
+            A human-in-the-loop triage service that takes a security alert and returns a severity
+            score you can audit. It extracts indicators from the alert text, enriches them through
+            the VirusTotal API, maps the described behavior onto MITRE ATT&amp;CK techniques, and
+            scores the result deterministically. The language model writes the summary and never
+            touches the score. Built with a project partner for COMP3650.
           </p>
           <div class="project-stack">
             <span class="tag">Python</span>
